@@ -55,10 +55,17 @@ body {
     color: white;
 }
 
-.input-box i {
+.input-box .bi-envelope-fill {
     position: absolute;
-    right: 20px;
-    top: 50%;
+    right: 60px;
+    top: 51%;
+    font-size: 20px;
+}
+
+.input-box .bi-lock-fill {
+    position: absolute;
+    right: 60px;
+    top: 31%;
     font-size: 20px;
 }
 
@@ -72,8 +79,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
-    color: #333;
-    font-weight: 600;
+    color: black;
+    font-weight: 500;
 }
 
 .wrapper .register-link {
