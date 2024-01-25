@@ -12,6 +12,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+session_start();
+
 // Function to validate email format
 function validateEmail($email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
@@ -35,8 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $result = $conn->query($checkUserQuery);
 
             if ($result->num_rows > 0) {
-                // Redirect to home.html
+                // Redirect to home.php
                 header("Location: home.html");
+                $_SESSION['user_email'] = $email;
                 exit();
             } else {
                 echo "<script>alert('Invalid email or password.');</script>";
@@ -63,7 +66,7 @@ $conn->close();
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="email" placeholder="Email" name="email" required>
+                <input type="email" placeholder="Email" name="email" required autocomplete="email">
                 <i class="bi bi-envelope-fill" ></i>
             </div>
             <div class="input-box">
@@ -76,9 +79,7 @@ $conn->close();
             <div class="register-link">
                 <p>Don't have an account? <a href = "register.php">Register</a></p>
             </div>
-
         </form>
     </div>
-
 </body>
 </html>

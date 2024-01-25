@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    background-color: black;
+}
+.nav-item a {
+    font-family: "Special Elite", sans-serif;
+}
+
+.container-fluid {
+    font-family: "Nunito", sans-serif;
+}
+
+#labelBg {
+    background-image: url(" img/WhitechapelKinbg.jpg");
+    background-position: center;
+    background-size: contain;
+    margin-top: 50px;
+}
+
+#prodLabel {
+    color:white;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Special Elite", sans-serif;
+}
+
+.row-cols-2 .card-title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.row-cols-2 .card {
+    border-radius: 20px;
+}
+
+.row-cols-2 .card-body {
+    background: black;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.row-cols-2 img {
+    height: 250px;
+    width: 250px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.row-cols-2 .card-text {
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.card-body a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.card-body .btn {
+    font-size: 12px;
+}
+
+.card-body .btn {
+    margin-top: -10px;
+}
+
+.card-body .dropdown-menu li {
+    margin-left: 10px;
+}
+
+.dropdown i {
+    font-size: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.card-img-top .picture2 {
+    display: none;
+}
+
+.card-img-top:hover .picture1 {
+    display: none;
+}
+
+.card-img-top:hover .picture2 {
+    display: block;
+}
+
+#socialsLabel {
+    font-family: "Special Elite", sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+
+#socials i {
+    padding: 0 10px 10px 10px;
+    color: rgba(60,110,217,255);
+}
+
+
+
+

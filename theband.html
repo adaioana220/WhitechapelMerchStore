@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Band - Whitechapel Merchandise Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="thebandStyle.css">
+</head>
+<body>
+<nav class="navbar bg-black navbar-expand-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/whitechapel-logo.png" width="150" height="50" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="theband.html">The Band</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="contact.php">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" target="_blank"
+                       href="https://github.com/adaioana220/WhitechapelMerchStore">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="logout.php">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/theband1.jpg" class="d-block w-100" alt="..." height="600px" width="1600">
+        </div>
+        <div class="carousel-item">
+            <img src="img/theband2.jpg" class="d-block w-100" alt="..." height="600px">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-family: 'Special Elite', sans-serif;font-size: 30px">Whitechapel</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/phillybo.jpg" class="d-block w-100" alt="..." height="600px" width="1600">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Phil Bozeman</h5>
+                <p>Vocalist</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/bensavage.jpg" class="d-block w-100" alt="..." height="600px" width="1600">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ben Savage</h5>
+                <p>Lead Guitarist</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/alexwade.jpg" class="d-block w-100" alt="..." height="600px" width="1600">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Alex Wade</h5>
+                <p>Rhythm Guitarist</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/zachhouseholder.jpg" class="d-block w-100" alt="..." height="600px" width="1600">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Zach Householder</h5>
+                <p>Third Guitarist</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/gabecrisp.jpg" class="d-block w-100" alt="..." height="600px" width="1600">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Gabe Crisp</h5>
+                <p>Bassist</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="card rounded-0 bg-black">
+            <div class="card-body text-center">
+                <p id="mv">Latest music video released (Metal Blade Records)</p>
+                <iframe width="700" height="400"
+                        src="https://www.youtube.com/embed/CtDBryaeLw0">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="card rounded-0 bg-black">
+            <div class="card-body text-center">
+                <p id="about">About</p>
+                <img id="logo" src="img/whitechapel-logo.png" alt="">
+                <p id="p1">An uncompromising deathcore outfit based out of Knoxville, Tennessee, Whitechapel (named for
+                    the
+                    London neighborhood where the notorious Jack the Ripper disposed of most of his victims) combine
+                    grindcore, hardcore, and melodic black metal into an unholy trinity of sonic malevolence. Emerging
+                    in 2007 with the punitive Somatic Defilement, the group issued a string of dark underground gems
+                    before bloodying up the mainstream with the release of 2014's Our Endless War. They continued to
+                    find success both at home and abroad with subsequent efforts Mark of the Blade (2016), The Valley
+                    (2019), and Kin (2021).</p>
+                <p id="p2">Formed in 2006 by Phil Bozeman, Brandon Cagle, and Ben Savage, the lineup grew with the
+                    arrivals of guitarist Alex Wade, bassist Gabe Crisp, and drummer Derek Martin, all of whom appeared
+                    on the band's 2006 self-produced demo. A European record deal with the Siege of Amida label and a
+                    distribution deal with Candlelight soon followed, resulting in the release of the group's debut
+                    long-player, The Somatic Defilement, in 2007. That same year, the band parted ways with Savage and
+                    Martin, who were replaced by guitarist Zach Householder and drummer Kevin Lane.</p>
+                <p id="p3">After signing on with Metal Blade, Whitechapel returned with their sophomore effort, This Is
+                    Exile, in 2008, followed shortly thereafter by A New Era of Corruption in 2010. In 2011, the group
+                    parted ways with Lane, replacing the drummer with Ben Harclerode, who made his debut on the remix EP
+                    Recorrupted later that year. Whitechapel returned in 2012 with a self-titled album, which was
+                    followed by their fifth set, Our Endless War, in 2014, the latter of which debuted at number one the
+                    Billboard Hard Rock Charts and garnered near-universal acclaim in the metal community. 2015 saw the
+                    release of the crowdfunded live CD/DVD Brotherhood of the Blade, which fans regarded as another high
+                    point.</p>
+                <p id="p4">The band re-entered the studio at the beginning of 2016 with producer Mark Lewis (Black
+                    Dahlia Murder, Cannibal Corpse), completing 11 new songs that showcased an evolution in their
+                    deathcore sound to include both clean and dirty vocals. The resulting Mark of the Blade arrived
+                    later that June and soared to the top of the U.S. hard rock charts. Whitechapel continued to seek
+                    out a more melodic style of death metal on 2019's The Valley and 2021's Kin, both of which also saw
+                    chart success.</p>
+                <p><a id="source" target="_blank" href="https://www.allmusic.com/artist/whitechapel-mn0000971856#biography">text source</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="card rounded-0 bg-black">
+            <div class="card-body text-center">
+                <p id="socials">Social Media</p>
+                <a target="_blank" href="https://facebook.com/whitechapelmetal"><i class="bi bi-facebook"></i></a>
+                <a target="_blank" href="https://instagram.com/whitechapelband"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com/WhitechapelBand"><i class="bi bi-twitter-x"></i></a>
+                <a target="_blank" href="https://youtube.com/user/WhitechapelTV"><i class="bi bi-youtube"></i></a>
+                <a target="_blank" href="https://open.spotify.com/artist/5274obTQJjzjyycRyJlfml?si=yeZbXI_XRPaHF6LP5iYmzA"><i class="bi bi-spotify"></i></a>
+                <a target="_blank" href="https://itunes.apple.com/us/artist/whitechapel/127084107"><i class="bi bi-apple"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+</script>
+</body>
+</html>
