@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-
+/* Setting font family for navigation links */
 .nav-item a {
     font-family: "Special Elite", sans-serif;
 }
 
+/* Adjusting card margin and padding */
 .container-fluid .card {
     margin-bottom: -25px;
-    padding-top: 5px
+    padding-top: 5px;
 }
 
+/* Styling headings for sections */
 #mv, #about, #socials {
     font-family: "Special Elite", sans-serif;
     font-size: 20px;
@@ -18,28 +20,25 @@
     padding-top: 20px;
 }
 
+/* Styling logo */
 #logo {
     margin-top: -15px;
 }
 
+/* Styling paragraphs */
 #p1, #p2, #p3, #p4 {
     font-family: "Nunito", sans-serif;
     color: white;
 }
 
+/* Styling icons */
 i {
     padding: 0 10px 0 10px;
     color: rgba(60,110,217,255);
 }
 
+/* Styling source text */
 #source {
     color: gray;
     font-size: 10px;
 }
-
-
-
-
-
-
-

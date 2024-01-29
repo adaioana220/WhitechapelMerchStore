@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!validateEmail($email)) {
             echo "<script>alert('Invalid email address.');</script>";
         } else {
-            // Check user credentials
+            // Checking if user credentials already exist in the database
             $checkUserQuery = "SELECT * FROM user_data WHERE email = '$email' AND password = '$password'";
             $result = $conn->query($checkUserQuery);
 

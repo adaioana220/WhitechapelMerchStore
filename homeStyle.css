@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+/* Styling the overall body */
 body {
     background-color: black;
 }
 
+/* Styling navigation item links */
 .nav-item a {
     font-family: "Special Elite", sans-serif;
 }
 
+/* Styling container fluid */
 .container-fluid {
     font-family: "Nunito", sans-serif;
 }
 
+/* Styling specific elements by ID */
+
+/* Styling the Spotify element */
 #spotify {
     margin-bottom: -25px;
-    padding-top: 5px
+    padding-top: 5px;
+    border-radius: 12px;
 }
 
-iframe {
-    border-radius: 12px
-}
-
-.kinLabel {
+/* Styling the "Kin" label */
+#kinLabel {
     color: rgba(60, 110, 217, 255);
     margin-top: 20px;
     border: 1px solid rgba(60, 110, 217, 255);
@@ -30,34 +34,40 @@ iframe {
     margin-bottom: 30px;
 }
 
+/* Styling the "Tracks" label */
 .tracksLabel {
     font-size: 18px;
     margin-bottom: 0;
 }
 
+/* Styling the "tracksCard" element */
 #tracksCard {
     font-size: 16px;
     margin-top: 10px;
     width: fit-content;
 }
 
+/* Styling paragraphs inside "tracksCard" */
 #tracksCard p {
     margin-bottom: 0;
 }
 
+/* Styling the "Buy Kin" button */
 #buyKinButton {
     background-color: rgba(60, 110, 217, 255);
     font-size: 15px;
     margin-top: 10px;
 }
 
+/* Styling the background */
 #labelBg {
-    background-image: url(" img/WhitechapelKinbg.jpg");
-    background-position: center;
-    background-size: contain;
+    background-image: url("img/WhitechapelKinbg.jpg"); /* Setting background image */
+    background-position: center; /* Setting background position */
+    background-size: contain; /* Setting background size */
     margin-top: 50px;
 }
 
+/* Styling the "Product" label */
 .prodLabel {
     color: white;
     padding-top: 40px;
@@ -67,6 +77,112 @@ iframe {
     font-family: "Special Elite", sans-serif;
 }
 
+/* Styling card elements in a two-column layout */
+.row-cols-2 .card-title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.row-cols-2 .card {
+    border-radius: 20px;
+}
+
+.row-cols-2 .card-body {
+    background: black;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.row-cols-2 img {
+    height: 250px;
+    width: 250px;
+    align-self: center; /* Aligning image to center */
+    object-fit: cover; /* Ensuring image covers the container */
+    border-radius: 20px;
+}
+
+/* Styling the price within card body */
+.card-body .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Styling unordered lists */
+ul {
+    list-style: none; /* Removing default list styles */
+    margin-left: -20px;
+    text-align: left;
+}
+
+/* Styling links within card body */
+.card-body a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* Styling icons within card body */
+.card-body i {
+    font-size: 30px;
+    cursor: pointer; /* Changing cursor to pointer */
+}
+
+/* Styling buttons within card body */
+.card-body .btn {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Styling dropdown menu items within card body */
+.card-body .dropdown-menu li {
+    margin-left: 10px;
+}
+
+/* Styling the second picture within card image top */
+.card-img-top .picture2 {
+    display: none; /* Hiding the second picture by default */
+}
+
+/* Handling picture change on hover */
+.card-img-top:hover .picture1 {
+    display: none; /* Hiding the first picture on hover */
+}
+
+.card-img-top:hover .picture2 {
+    display: block; /* Displaying the second picture on hover */
+}
+
+/* Styling the "Socials" label */
+#socialsLabel {
+    font-family: "Special Elite", sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+
+/* Styling social icons */
+#socials i {
+    padding: 0 10px 10px 10px;
+    color: rgba(60, 110, 217, 255);
+    font-size: 15px;
+}
+
+
+/* Styling product label */
+.prodLabel {
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Special Elite", sans-serif;
+}
+
+/* Styling card elements in a two-column layout */
 .row-cols-2 .card-title {
     margin-top: 10px;
     font-size: 16px;
@@ -96,9 +212,10 @@ iframe {
 .card-body .price {
     font-weight: bold;
     margin-bottom: 10px;
-    text-align: center
+    text-align: center;
 }
 
+/* Styling unordered lists */
 ul {
     list-style: none;
     margin-left: -20px;
@@ -125,6 +242,7 @@ ul {
     margin-left: 10px;
 }
 
+/* Styling card image tops with two pictures */
 .card-img-top .picture2 {
     display: none;
 }
@@ -137,6 +255,7 @@ ul {
     display: block;
 }
 
+/* Styling socials label and icons */
 #socialsLabel {
     font-family: "Special Elite", sans-serif;
     font-size: 20px;
@@ -149,7 +268,3 @@ ul {
     color: rgba(60, 110, 217, 255);
     font-size: 15px;
 }
-
-
-
-
