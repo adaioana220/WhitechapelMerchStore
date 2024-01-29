@@ -102,3 +102,17 @@ body {
     color: black;
     font-weight: 500;
 }
+
+.back-login {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.back-login a {
+    color: white;
+    text-decoration: none;
+}
+
+.back-login p a:hover {
+    text-decoration: underline;
+}

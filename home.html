@@ -58,13 +58,15 @@
     </div>
 </div>
 
-
 <div class="container-fluid">
     <div class="row">
-        <div class="card rounded-0 bg-black" style="margin-bottom: -25px; padding-top: 5px">
+        <div id="spotify" class="card rounded-0 bg-black">
             <div class="card-body">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/25ozhEOZbGRseRm8QSkfFL?utm_source=generator&theme=0" width="100%" height="152"
-                        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                <iframe
+                        src="https://open.spotify.com/embed/album/25ozhEOZbGRseRm8QSkfFL?utm_source=generator&theme=0"
+                        width="100%" height="152"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
             </div>
         </div>
@@ -77,27 +79,26 @@
                         <img src="img/WhitechapelKin.jpg" alt="" width="316" height="316">
                     </div>
                     <div class="col-md-6 align-middle">
-                        <p style="color:rgba(60,110,217,255);margin-top: 20px;border: 1px solid rgba(60,110,217,255);font-size: 18px">
+                        <p class="kinLabel">
                             <b>Kin</b> - Out now on all streaming platforms</p>
-                        <p style="font-size: 18px;margin-bottom: 0">Track Listing:
-                        <div class="card text-white bg-transparent mx-auto"
-                             style="font-size: 16px;margin-top: 10px;width: fit-content;">
+                        <p class="tracksLabel">Track Listing:
+                        <div id="tracksCard" class="card text-white bg-transparent mx-auto">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <p style="margin-bottom: 0">01. I Will Find You</p>
-                                        <p style="margin-bottom: 0">02. Lost Boy</p>
-                                        <p style="margin-bottom: 0">03. A Bloodsoaked Symphony</p>
-                                        <p style="margin-bottom: 0">04. Anticure</p>
-                                        <p style="margin-bottom: 0">05. The Ones That Made Us</p>
+                                        <p>01. I Will Find You</p>
+                                        <p>02. Lost Boy</p>
+                                        <p>03. A Bloodsoaked Symphony</p>
+                                        <p>04. Anticure</p>
+                                        <p>05. The Ones That Made Us</p>
                                     </div>
                                     <div class="col">
-                                        <p style="margin-bottom: 0;padding-top: 6px">06. History is Silent</p>
-                                        <p style="margin-bottom: 0">07. To The Wolves</p>
-                                        <p style="margin-bottom: 0">08. Orphan</p>
-                                        <p style="margin-bottom: 0">09. Without You</p>
-                                        <p style="margin-bottom: 0">10. Without Us</p>
-                                        <p style="margin-bottom: 0">11. Kin</p>
+                                        <p>06. History is Silent</p>
+                                        <p>07. To The Wolves</p>
+                                        <p>08. Orphan</p>
+                                        <p>09. Without You</p>
+                                        <p>10. Without Us</p>
+                                        <p>11. Kin</p>
                                     </div>
                                 </div>
                             </div>
@@ -111,8 +112,9 @@
         <div class="card rounded-0 bg-black">
             <div class="card-body">
                 <a target="_blank" href="https://www.metalblade.com/us/releases/whitechapel-kin/">
-                    <button type="button" class="btn text-center text-white w-100"
-                            style="background-color: rgba(60,110,217,255);font-size: 15px;margin-top: 10px;"><b>BUY "Kin" NOW</b></button>
+                    <button id="buyKinButton" type="button" class="btn text-center text-white w-100">
+                        <b>BUY "Kin" NOW</b>
+                    </button>
                 </a>
             </div>
         </div>
@@ -123,15 +125,15 @@
     <div class="row">
         <div class="card rounded-0 bg-black">
             <div class="card-body" id="labelBg">
-                <p id="prodLabel">Whitechapel Unofficial Merchandise Store - Our Products</p>
+                <p class="prodLabel">Whitechapel Unofficial Merchandise Store - Our Products</p>
             </div>
         </div>
     </div>
     <div class="row row-cols-2 row-cols-lg-4 g-3">
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/KinBlackT-Shirt1.jpg" alt="...">
                         </div>
@@ -142,7 +144,7 @@
                     <h5 class="card-title">Kin Black T-Shirt</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
+                        <li class="price">$25.00</li>
                         <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
                             Heavy Cotton T-Shirts
                         </li>
@@ -154,7 +156,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -164,13 +165,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00kin0bl-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/KINBlackCrewneck1.jpg" alt="...">
                         </div>
@@ -181,11 +185,12 @@
                     <h5 class="card-title">Kin Black Crewneck</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$35.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.gildan.com/us/en/18000-adult-crewneck-sweatshirt-en_us/">Gildan</a>
+                            Heavy Blend Crewnecks
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>50/50 preshrunk cotton/polyester</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -193,7 +198,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -203,13 +207,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00kin0bl-cs"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/KINBlackLongSleeve1.jpg" alt="...">
                         </div>
@@ -220,11 +227,12 @@
                     <h5 class="card-title">Kin Black Long Sleeve</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$35.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.gildan.com/us/en/8400-adult-long-sleeve-t-shirt-en_us/">Gildan</a>
+                            Dry Blend Long Sleeves
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>50/50 preshrunk cotton/polyester</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -232,7 +240,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -242,13 +249,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00kin0bl-ls"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/KINBlackZip-Up1.jpg" alt="...">
                         </div>
@@ -259,11 +269,12 @@
                     <h5 class="card-title">Kin Black Zip-up</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$40.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.gildan.com/us/en/18600-adult-full-zip-hooded-sweatshirt-en_us/">Gildan</a>
+                            Heavy Blend Zip-up
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>50/50 preshrunk cotton/polyester</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -271,7 +282,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -281,15 +291,18 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00kin0bl-zp"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="row row-cols-2 row-cols-lg-4 g-3 my-1">
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/KINEyeBlackT1.jpg" alt="...">
                         </div>
@@ -300,11 +313,11 @@
                     <h5 class="card-title">Kin Eye Black T-Shirt</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$25.00</li>
+                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/8000-adult-t-shirt-en_us/">Gildan</a>
+                            Dry Blend T-Shirts
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>50/50 preshrunk cotton/polyester</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -312,7 +325,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -322,13 +334,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00kinebl-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/ClassicLogoBlackT-Shirt1.jpg" alt="...">
                         </div>
@@ -339,19 +354,20 @@
                     <h5 class="card-title">Classic Logo Black T-Shirt</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$25.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.bellacanvas.com/product/3001/Unisex-Jersey-Short-Sleeve-Tee.html">Bella
+                            + Canvas</a>
+                            T-Shirts
                         </li>
-                        <li>100% preshrunk cotton</li>
-                        <li>Classic fit</li>
+                        <li>100% airlume combed and ringspun cotton</li>
+                        <li>Retail fit</li>
                     </ul>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle bg-black" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -361,13 +377,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00clasbl-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/TieDyeT-Shirt1.jpg" alt="...">
                         </div>
@@ -378,11 +397,12 @@
                     <h5 class="card-title">Logo Spider Black Tie Dye T-Shirt</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$25.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.print.inc/p/243/colortone-tonal-spider-tie-dye-t-shirts">Colortone</a>
+                            Spider Tie Dye T-shirts
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>100% heavyweight cotton</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -390,7 +410,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -400,13 +419,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00logosb-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/PurpleTieDyeT-Shirt1.jpg" alt="...">
                         </div>
@@ -414,14 +436,15 @@
                             <img class="img-fluid" src="img/prod/PurpleTieDyeT-Shirt2.jpg" alt="...">
                         </div>
                     </div>
-                    <h5 class="card-title">Logo Spider Purple Tie Dye T-Shirt</h5>
+                    <h5 class="card-title">Logo Spider Purple Tie Dye T-Shirts</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$25.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.print.inc/p/243/colortone-tonal-spider-tie-dye-t-shirts">Colortone</a>
+                            Spider Tie Dye T-Shirts
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>100% heavyweight cotton</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -429,7 +452,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -439,15 +461,18 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00logosp-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="row row-cols-2 row-cols-lg-4 g-3 my-1">
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/WitnessBlackPocketT1.jpg" alt="...">
                         </div>
@@ -458,11 +483,12 @@
                     <h5 class="card-title">Witness Black Pocket T-Shirt</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$25.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.gildan.com/us/en/5300-adult-t-shirt-with-pocket-en_us/">Gildan</a>
+                            Heavy Cotton T-shirts
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>100% cotton</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -470,7 +496,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -480,13 +505,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00witnbl-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/ValleyEyeShirt1.jpg" alt="...">
                         </div>
@@ -497,19 +525,20 @@
                     <h5 class="card-title">Valley Eye Black T-Shirt</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$25.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.bellacanvas.com/product/3001/Unisex-Jersey-Short-Sleeve-Tee.html">Bella
+                            + Canvas</a>
+                            T-Shirts
                         </li>
-                        <li>100% preshrunk cotton</li>
-                        <li>Classic fit</li>
+                        <li>100% airlume combed and ringspun cotton</li>
+                        <li>Retail fit</li>
                     </ul>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle bg-black" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -519,13 +548,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00veyebl-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/ValleyShirt1.jpg" alt="...">
                         </div>
@@ -533,14 +565,14 @@
                             <img class="img-fluid" src="img/prod/ValleyShirt2.jpg" alt="...">
                         </div>
                     </div>
-                    <h5 class="card-title">Sleep With One Eye Open Black T-Shirt</h5>
+                    <h5 class="card-title">Sleep With One Eye Open T-Shirt</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
+                        <li class="price">$25.00</li>
                         <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
                             Heavy Cotton T-Shirts
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>100% cotton</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -548,7 +580,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -558,13 +589,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00swoebl-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/BSShirt1.jpg" alt="...">
                         </div>
@@ -572,10 +606,10 @@
                             <img class="img-fluid" src="img/prod/BSShirt2.jpg" alt="...">
                         </div>
                     </div>
-                    <h5 class="card-title">A Bloodsoaked Symphony Black T-Shirt</h5>
+                    <h5 class="card-title">A Bloodsoaked Symphony T-Shirt</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
+                        <li class="price">$25.00</li>
                         <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
                             Heavy Cotton T-Shirts
                         </li>
@@ -587,7 +621,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -597,15 +630,18 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00abssbl-ts"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="row row-cols-2 row-cols-lg-4 g-3 my-1">
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/BSLongSleeve1.jpg" alt="...">
                         </div>
@@ -616,9 +652,10 @@
                     <h5 class="card-title">A Bloodsoaked Symphony Black Long Sleeve</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$35.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.gildan.com/us/en/5400-adult-long-sleeve-t-shirt-en_us/">Gildan</a>
+                            Heavy Cotton Long Sleeves
                         </li>
                         <li>100% preshrunk cotton</li>
                         <li>Classic fit</li>
@@ -628,7 +665,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -638,13 +674,15 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank" href="https://whitechapel.merchnow.com/collections/all/products/wc00abssbl-ls"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/BSPullover1.jpg" alt="...">
                         </div>
@@ -655,11 +693,12 @@
                     <h5 class="card-title">A Bloodsoaked Symphony Black Pullover</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$40.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.gildan.com/us/en/18500-adult-hooded-sweatshirt-en_us/">Gildan</a>
+                            Heavy Blend Pullovers
                         </li>
-                        <li>100% preshrunk cotton</li>
+                        <li>50/50 cotton/polyester</li>
                         <li>Classic fit</li>
                     </ul>
                     <div class="dropdown">
@@ -667,7 +706,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -677,13 +715,16 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank"
+                       href="https://whitechapel.merchnow.com/collections/all/products/wc00abssbl-hs"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/DoomWoodsLongSleeve1.jpg" alt="...">
                         </div>
@@ -694,9 +735,10 @@
                     <h5 class="card-title">Doom Woods Black Long Sleeve</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$35.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.gildan.com/us/en/5400-adult-long-sleeve-t-shirt-en_us/">Gildan</a>
+                            Heavy Cotton Long Sleeves
                         </li>
                         <li>100% preshrunk cotton</li>
                         <li>Classic fit</li>
@@ -706,7 +748,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -716,13 +757,15 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank" href="https://whitechapel.merchnow.com/collections/all/products/wc00dmwdbl-ls"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
-                    <div class="card-img-top w-100 h-100">
+                    <div class="card-img-top">
                         <div class="picture1">
                             <img class="img-fluid" src="img/prod/DPWindbreaker1.jpg" alt="...">
                         </div>
@@ -733,19 +776,19 @@
                     <h5 class="card-title">Double Pentagram Black Camo Pullover Windbreaker</h5>
                     <p class="card-text">
                     <ul>
-                        <li style="font-weight: bold;margin-bottom: 10px;text-align: center">$25.00</li>
-                        <li>Printed on <a target="_blank" href="https://www.gildan.com/us/en/5000-adult-t-shirt-en_us/">Gildan</a>
-                            Heavy Cotton T-Shirts
+                        <li class="price">$55.00</li>
+                        <li>Printed on <a target="_blank"
+                                          href="https://www.independenttradingco.com/products/water-resistant-windbreaker-anorak-jacket-exp94naw">Independent
+                            Trading Co.</a>
+                            Water Resistant Jackets
                         </li>
-                        <li>100% preshrunk cotton</li>
-                        <li>Classic fit</li>
+                        <li>100% nylon with Interior waterproof coating</li>
                     </ul>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle bg-black" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                             Available sizes
                         </button>
-                        <i class="bi bi-bag-plus"></i>
                         <ul class="dropdown-menu dropdown-menu-dark bg-black">
                             <li>S</li>
                             <li>M</li>
@@ -755,6 +798,8 @@
                             <li>3XL</li>
                         </ul>
                     </div>
+                    <a target="_blank" href="https://whitechapel.merchnow.com/collections/all/products/wc00dblpbc-jk"><i
+                            class="bi bi-bag-plus"></i></a>
                 </div>
             </div>
         </div>
@@ -767,8 +812,11 @@
                 <a target="_blank" href="https://instagram.com/whitechapelband"><i class="bi bi-instagram"></i></a>
                 <a target="_blank" href="https://twitter.com/WhitechapelBand"><i class="bi bi-twitter-x"></i></a>
                 <a target="_blank" href="https://youtube.com/user/WhitechapelTV"><i class="bi bi-youtube"></i></a>
-                <a target="_blank" href="https://open.spotify.com/artist/5274obTQJjzjyycRyJlfml?si=yeZbXI_XRPaHF6LP5iYmzA"><i class="bi bi-spotify"></i></a>
-                <a target="_blank" href="https://itunes.apple.com/us/artist/whitechapel/127084107"><i class="bi bi-apple"></i></a>
+                <a target="_blank"
+                   href="https://open.spotify.com/artist/5274obTQJjzjyycRyJlfml?si=yeZbXI_XRPaHF6LP5iYmzA"><i
+                        class="bi bi-spotify"></i></a>
+                <a target="_blank" href="https://itunes.apple.com/us/artist/whitechapel/127084107"><i
+                        class="bi bi-apple"></i></a>
             </div>
         </div>
     </div>

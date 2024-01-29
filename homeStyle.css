@@ -4,12 +4,51 @@
 body {
     background-color: black;
 }
+
 .nav-item a {
     font-family: "Special Elite", sans-serif;
 }
 
 .container-fluid {
     font-family: "Nunito", sans-serif;
+}
+
+#spotify {
+    margin-bottom: -25px;
+    padding-top: 5px
+}
+
+iframe {
+    border-radius: 12px
+}
+
+.kinLabel {
+    color: rgba(60, 110, 217, 255);
+    margin-top: 20px;
+    border: 1px solid rgba(60, 110, 217, 255);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.tracksLabel {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#tracksCard {
+    font-size: 16px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+#tracksCard p {
+    margin-bottom: 0;
+}
+
+#buyKinButton {
+    background-color: rgba(60, 110, 217, 255);
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 #labelBg {
@@ -19,8 +58,8 @@ body {
     margin-top: 50px;
 }
 
-#prodLabel {
-    color:white;
+.prodLabel {
+    color: white;
     padding-top: 40px;
     padding-bottom: 15px;
     font-size: 22px;
@@ -54,13 +93,15 @@ body {
     border-radius: 20px;
 }
 
-.row-cols-2 .card-text {
-    text-align: left;
+.card-body .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center
 }
 
 ul {
     list-style: none;
-    padding-left: 10px;
+    margin-left: -20px;
     text-align: left;
 }
 
@@ -70,22 +111,18 @@ ul {
     font-weight: 500;
 }
 
-.card-body .btn {
-    font-size: 12px;
+.card-body i {
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .card-body .btn {
-    margin-top: -10px;
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
 .card-body .dropdown-menu li {
     margin-left: 10px;
-}
-
-.dropdown i {
-    font-size: 30px;
-    padding-left: 10px;
-    cursor: pointer;
 }
 
 .card-img-top .picture2 {
@@ -109,7 +146,8 @@ ul {
 
 #socials i {
     padding: 0 10px 10px 10px;
-    color: rgba(60,110,217,255);
+    color: rgba(60, 110, 217, 255);
+    font-size: 15px;
 }
 
 

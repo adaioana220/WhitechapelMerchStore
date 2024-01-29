@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Process the form if the message length is within the allowed range
         echo "<script>alert('Message sent successfully! You will be contacted as soon as possible. Thank you.')</script>";
-    }
+        header("Location: home.html");    }
 }
 ?>
 

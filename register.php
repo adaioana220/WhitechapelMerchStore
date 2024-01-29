@@ -106,6 +106,9 @@ $conn->close();
             <i class="bi bi-lock-fill"></i>
         </div>
         <button type="submit" class= "btn" value="Register">Register</button>
+        <div class="back-login">
+            <p>Back to <a href="login.php">login page</a></p>
+        </div>
 </form>
 </body>
 </html>
